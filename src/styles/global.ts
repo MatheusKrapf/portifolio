@@ -1,4 +1,8 @@
-﻿import { createGlobalStyle } from 'styled-components'
+﻿import { createGlobalStyle, css } from 'styled-components'
+
+export const fontFaces = css`
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+`
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -17,7 +21,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif */
+    font-family: 'Poppins', sans-serif;
   }
 `
 
