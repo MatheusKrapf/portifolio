@@ -6,10 +6,14 @@ import Cookies from 'js-cookie'
 import light from 'styles/themes/light'
 import dark from 'styles/themes/dark'
 
+import Loading from 'components/Loading'
 import HeroBanner from 'components/HeroBanner'
 import Skills from 'components/Skills'
 import About from 'components/About'
-import Loading from 'components/Loading'
+import Portfolio from 'components/Portfolio'
+import Experiences from 'components/Experiences'
+import Contact from 'components/Contact'
+import Footer from 'components/Footer'
 
 export default function Home() {
   const [theme, setTheme] = useState(dark)
@@ -58,6 +62,10 @@ export default function Home() {
         <HeroBanner toggleTheme={toggleTheme} />
         <Skills />
         <About />
+        <Portfolio />
+        <Experiences />
+        <Contact />
+        {/* <Footer /> */}
       </ThemeProvider>
     </>
   )

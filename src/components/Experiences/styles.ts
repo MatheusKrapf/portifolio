@@ -2,13 +2,12 @@
 
 export const Container = styled.main`
   width: 100%;
-
-  padding-right: 82px;
-  padding-left: 82px;
+  /* height: 100%; */
+  padding-left: 83px;
+  padding-right: 83px;
+  overflow: hidden;
   /* background: #0b0c10; */
   background: ${(props) => props.theme.color.background};
-  /* color: #fff; */
-  color: ${(props) => props.theme.color.text};
 
   position: relative;
 
@@ -20,7 +19,7 @@ export const Container = styled.main`
 
 export const Content = styled.div`
   padding-top: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 `
 
 export const Title = styled.div`
@@ -76,60 +75,74 @@ export const Title = styled.div`
     }
   }
 `
-export const AboutContainer = styled.div`
-  padding-top: 100px;
+export const ExperiencesContainer = styled.div`
+  padding-top: 50px;
 
   display: flex;
-  justify-content: space-evenly;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
+  justify-content: center;
 `
 
-export const TextContainer = styled.div`
-  width: 550px;
-
+export const ExperienceContentLeft = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-right: 20px;
+  padding-top: 120px;
+  text-align: end;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    padding-bottom: 35px;
+    padding-top: 100px;
   }
 `
 
-export const Name = styled.div`
-  font-size: 40px;
-  font-weight: 700;
+export const ExperienceContentRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 270px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 200px;
+  }
+`
+
+export const DateExperience = styled.div`
   color: #9542f5;
-`
-
-export const Description = styled.div`
-  padding-top: 20px;
-  font-size: 17px;
-  line-height: 29px;
-  font-weight: 300;
-`
-export const PhotoContainer = styled.div`
-  img {
-    width: 250px;
-    border-radius: 100%;
-    position: relative;
-
-    box-shadow: 0px 0px 13px 3px ${(props) => props.theme.color.text};
-
-    background: ${(props) => props.theme.color.text};
-    border-radius: 100%;
-    display: inline-block;
-    font-size: 20px;
-    padding: 0;
-    text-decoration: none;
-  }
+  font-size: 30px;
+  font-weight: 700;
 
   @media screen and (max-width: 768px) {
-    display: flex;
-    justify-content: center;
+    font-size: 23px;
   }
+`
+
+export const TitleExperience = styled.div`
+  color: ${(props) => props.theme.color.text};
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 12px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 23px;
+  }
+`
+export const LocalExperience = styled.div`
+  color: ${(props) => props.theme.color.text};
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 5px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 23px;
+  }
+`
+
+export const LineContainer = styled.div`
+  height: 510px;
+  display: flex;
+  justify-content: center;
+`
+
+export const Line = styled.span`
+  border-left: 6px solid #9542f5;
+  border-radius: 5px;
 `

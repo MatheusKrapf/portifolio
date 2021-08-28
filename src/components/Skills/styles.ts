@@ -11,6 +11,11 @@ export const Container = styled.main`
   color: ${(props) => props.theme.color.text};
 
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
 `
 
 export const Content = styled.div`
@@ -18,75 +23,55 @@ export const Content = styled.div`
 `
 
 export const Title = styled.div`
-  /* font-size: 50px;
-  text-transform: uppercase;
-  font-weight: 700;
-  cursor: pointer;
-  color: #fff; */
-
   font-size: 50px;
-  line-height: 1;
   font-weight: 700;
-  position: absolute;
-  top: 50px;
-  left: 13%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  text-decoration: none;
-  /* color: #fff; */
+  position: relative;
   color: ${(props) => props.theme.color.text};
-  cursor: pointer;
   text-transform: uppercase;
 
-  &:before,
-  &:after {
-    display: block;
-    content: 'Skills';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.8;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+  animation: glitch 500ms infinite;
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
   }
 
-  &:after {
-    color: #f0f;
-    z-index: -2;
-  }
-
-  &:before {
-    color: #0ff;
-    z-index: -1;
-  }
-
-  &:hover:before {
-    animation: Title 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-  }
-
-  &:hover:after {
-    animation: Title 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
-      infinite;
-  }
-
-  @keyframes Title {
+  @keyframes glitch {
     0% {
-      transform: translate(0);
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
     }
-    20% {
-      transform: translate(-5px, 5px);
+    14% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
     }
-    40% {
-      transform: translate(-5px, -5px);
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
     }
-    60% {
-      transform: translate(5px, 5px);
+    49% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
     }
-    80% {
-      transform: translate(5px, -5px);
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+        0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    99% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+        0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
     }
     100% {
-      transform: translate(0);
+      text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
     }
   }
 `
@@ -96,6 +81,10 @@ export const SkillsContainer = styled.div`
   justify-content: center;
   padding-top: 70px;
   padding-bottom: 150px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 100px;
+  }
 `
 
 export const Skills = styled.div`
@@ -111,13 +100,19 @@ export const Skill = styled.div`
     width: 150px;
     /* cursor: pointer; */
 
-    -webkit-filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); */
     filter: grayscale(100%);
     /* filter: gray;  */
 
     &:hover {
       -webkit-filter: grayscale(0%);
       transition: 0.5s;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100px;
+
+      filter: grayscale(0%);
     }
   }
 `

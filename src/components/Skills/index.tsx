@@ -13,7 +13,7 @@ const gitImage = '/img/skills/git-plain.svg'
 
 const Skills = () => {
   return (
-    <S.Container>
+    <S.Container id="Skills">
       <S.Content>
         <S.Title>Skills</S.Title>
 

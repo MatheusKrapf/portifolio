@@ -2,6 +2,8 @@
 import Switch from 'react-switch'
 import { ThemeContext } from 'styled-components'
 
+import { Link } from 'react-scroll'
+
 import * as S from './styles'
 
 interface Props {
@@ -31,12 +33,21 @@ const HeroBanner: React.FC<Props> = ({ toggleTheme }) => {
 
       <S.Content>
         <S.Presentation>
-          <S.EuSou>Eu sou</S.EuSou>
+          <S.Im>Eu sou</S.Im>
           <S.GlitchContent>
             <S.Glitch data-text="Krapf">Krapf</S.Glitch>
           </S.GlitchContent>
-          <S.TextCareer>Front-end Jr.</S.TextCareer>
+          <S.TextCarrer>Front-end Jr.</S.TextCarrer>
         </S.Presentation>
+
+        <S.ScrollDownAnimation>
+          <Link to="Skills" smooth={true} duration={1000}>
+            <S.Mouse>
+              <S.Move></S.Move>
+            </S.Mouse>
+            <S.TextScroll>Scroll</S.TextScroll>
+          </Link>
+        </S.ScrollDownAnimation>
       </S.Content>
     </S.Container>
   )

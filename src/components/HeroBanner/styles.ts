@@ -8,6 +8,11 @@ export const Container = styled.main`
   overflow: hidden;
   /* background: #0b0c10; */
   background: ${(props) => props.theme.color.background};
+
+  @media screen and (max-width: 768px) {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
 `
 export const HeaderContent = styled.div`
   display: flex;
@@ -25,19 +30,25 @@ export const Presentation = styled.div`
   width: 850px;
 `
 
-export const EuSou = styled.div`
+export const Im = styled.div`
   /* color: #fff; */
   color: ${(props) => props.theme.color.text};
-  font-size: 30px;
-  font-weight: 100;
-  padding-top: 100px;
+  /* font-weight: 700; */
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 70px;
   /* padding-left: 50px; */
   text-transform: uppercase;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+    padding-top: 80px;
+  }
 `
 
 export const GlitchContent = styled.div`
   position: relative;
-  padding-top: 50px;
   /* height: 100%;
   width: 100%; */
   display: flex;
@@ -55,6 +66,11 @@ export const Glitch = styled.div`
   letter-spacing: 2px;
   padding: 30px;
 
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+    padding: 30px;
+  }
+
   &:after,
   &:before {
     position: absolute;
@@ -67,8 +83,12 @@ export const Glitch = styled.div`
     /* background: #0b0c10; */
     background: ${(props) => props.theme.color.background};
     /* color: #fff; */
-    color: ${(props) => props.theme}
+    color: ${(props) => props.theme.color.text};
     overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+      padding: 30px;
+    }
   }
 
   &:before {
@@ -214,12 +234,68 @@ export const Glitch = styled.div`
     }
   }
 `
-export const TextCareer = styled.div`
+export const TextCarrer = styled.div`
   font-size: 40px;
-  font-weight: 100;
+  font-weight: 400;
   text-align: end;
   /* color: #fff; */
   color: ${(props) => props.theme.color.text};
   text-transform: uppercase;
-  padding-top: 42px;
+  padding-top: 60px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+    padding-top: 80px;
+  }
+`
+
+export const ScrollDownAnimation = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+`
+
+export const Mouse = styled.span`
+  margin: 0 auto;
+  display: block;
+  border-radius: 50px;
+  border: 2px solid ${(props) => props.theme.color.text};
+  height: 50px;
+  width: 28px;
+  position: relative;
+`
+
+export const Move = styled.span`
+  position: absolute;
+  background-color: ${(props) => props.theme.color.text};
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: move 2s linear infinite;
+
+  @keyframes move {
+    0% {
+      transform: translate(-50%, 10px);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(-50%, 20px);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, 30px);
+      opacity: 0;
+    }
+  }
+`
+
+export const TextScroll = styled.div`
+  padding-top: 7px;
+  color: ${(props) => props.theme.color.text};
+  text-align: center;
+  font-size: 12px;
 `

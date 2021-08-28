@@ -14,13 +14,12 @@ const About = () => {
           <S.TextContainer>
             <S.Name>Matheus Krapf</S.Name>
             <S.Description>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-              laborum perferendis nulla illum sunt atque quidem ut, dolor.
-              Suscipit blanditiis commodi a soluta itaque quae omnis, velit
-              voluptas voluptatum repudiandae. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Est iste incidunt, et nam pariatur
-              sit totam quos id ex dolorem deleniti, autem tempore eaque dolores
-              quibusdam obcaecati, veritatis mollitia consequuntur.
+              Formado no curso técnico de{' '}
+              <strong>Manutenção e Suporte em informática</strong> no IFSP
+              Itapetininga e atualmente cursando{' '}
+              <strong>Análise e Desenvolvimento de Sistemas</strong> na Fatec
+              Itapetininga, comecei na área de Front-End como estágiario e
+              atualmente atuo como Front-End Jr.
             </S.Description>
           </S.TextContainer>
 
