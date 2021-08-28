@@ -140,7 +140,7 @@ export const ContactContainer = styled.div`
 export const EmailContainer = styled.div`
   padding-top: 50px;
   display: flex;
-  gap: 6px;
+  gap: 8px;
 `
 
 export const EmailImage = styled.div`
@@ -157,7 +157,7 @@ export const Email = styled.a`
 `
 export const WhatsContainer = styled.div`
   display: flex;
-  gap: 6px;
+  gap: 8px;
   padding-top: 15px;
 `
 
