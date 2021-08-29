@@ -14,7 +14,7 @@ const About = () => {
           <S.TextContainer>
             <S.Name>Matheus Krapf</S.Name>
             <S.Description>
-              Formado no curso técnico de{' '}
+              Atualmente tenho 26 anos e sou formado no curso técnico de{' '}
               <strong>Manutenção e Suporte em informática</strong> no IFSP
               Itapetininga e atualmente cursando{' '}
               <strong>Análise e Desenvolvimento de Sistemas</strong> na Fatec

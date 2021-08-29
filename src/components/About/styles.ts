@@ -20,7 +20,7 @@ export const Container = styled.main`
 
 export const Content = styled.div`
   padding-top: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 `
 
 export const Title = styled.div`
@@ -77,12 +77,13 @@ export const Title = styled.div`
   }
 `
 export const AboutContainer = styled.div`
-  padding-top: 100px;
+  padding-top: 50px;
 
   display: flex;
   justify-content: space-evenly;
 
   @media screen and (max-width: 768px) {
+    padding-top: 70px;
     flex-direction: column;
   }
 `

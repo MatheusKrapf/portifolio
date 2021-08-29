@@ -78,7 +78,7 @@ export const Title = styled.div`
 export const ContentContact = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-top: 50px;
 
   @media screen and (max-width: 768px) {
@@ -115,6 +115,14 @@ export const Text = styled.div`
   font-size: 17px;
   line-height: 27px;
   font-weight: 300;
+
+  span {
+    padding-left: 5px;
+
+    path {
+      fill: ${(props) => props.theme.color.text};
+    }
+  }
 `
 
 export const TextDev = styled.div`

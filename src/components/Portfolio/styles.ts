@@ -167,7 +167,7 @@ export const BallGreen = styled.span`
 
 export const TitleBar = styled.div`
   text-align: center;
-  width: 100%;
+  flex-basis: calc(100% - 80px);
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
