@@ -111,7 +111,7 @@ export const DateExperience = styled.div`
   font-weight: 700;
 
   @media screen and (max-width: 768px) {
-    font-size: 23px;
+    font-size: 20px;
   }
 `
 
@@ -122,7 +122,7 @@ export const TitleExperience = styled.div`
   padding-top: 12px;
 
   @media screen and (max-width: 768px) {
-    font-size: 23px;
+    font-size: 20px;
   }
 `
 export const LocalExperience = styled.div`
@@ -132,7 +132,7 @@ export const LocalExperience = styled.div`
   padding-top: 5px;
 
   @media screen and (max-width: 768px) {
-    font-size: 23px;
+    font-size: 20px;
   }
 `
 

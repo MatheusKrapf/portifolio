@@ -193,7 +193,7 @@ export const SocialMedias = styled.div`
 export const SocialMediasContainer = styled.div`
   display: flex;
   padding-top: 15px;
-  gap: 20px;
+  gap: 15px;
 `
 
 export const TitleSocial = styled.div`
