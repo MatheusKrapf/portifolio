@@ -13,10 +13,10 @@ import About from 'components/About'
 import Portfolio from 'components/Portfolio'
 import Experiences from 'components/Experiences'
 import Contact from 'components/Contact'
-import Footer from 'components/Footer'
 
 export default function Home() {
-  const [theme, setTheme] = useState(dark)
+  const cookieTheme = JSON.parse(Cookies.get('theme') || JSON.stringify(dark))
+  const [theme, setTheme] = useState(cookieTheme || dark)
   const [loading, setLoading] = useState(true)
 
   const fakeLoading = new Promise((resolve) => {
@@ -36,25 +36,40 @@ export default function Home() {
     []
   )
 
-  const [isDarkTheme, setIsDarkTheme] = useState(
-    Cookies.get('theme') === 'dark'
-  )
+  // const [isDarkTheme, setIsDarkTheme] = useState(
+  //   Cookies.get('theme') === ('dark' || '') ? true : false
+  // )
 
-  const toggleTheme = () => {
-    setIsDarkTheme(!isDarkTheme)
-  }
+  // const toggleTheme = () => {
+  //   setIsDarkTheme(!isDarkTheme)
+  // }
+
+  // useEffect(() => {
+  //   setTheme(isDarkTheme ? dark : light)
+
+  //   Cookies.set('theme', theme, { expires: 365 })
+  // }, [isDarkTheme])
 
   useEffect(() => {
-    setTheme(isDarkTheme ? dark : light)
+    Cookies.set('theme', JSON.stringify(theme), { expires: 365 })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [theme])
 
-    Cookies.set('theme', isDarkTheme ? 'dark' : 'light', { expires: 365 })
-  }, [isDarkTheme])
+  const toggleTheme = () => {
+    setTheme(theme.title === 'dark' ? light : dark)
+  }
 
   useEffect(() => {
     resolveLoading()
   }, [resolveLoading])
 
-  if (loading) return <Loading />
+  if (loading) {
+    return (
+      <ThemeProvider theme={theme}>
+        <Loading />
+      </ThemeProvider>
+    )
+  }
 
   return (
     <>
@@ -65,7 +80,6 @@ export default function Home() {
         <Portfolio />
         <Experiences />
         <Contact />
-        {/* <Footer /> */}
       </ThemeProvider>
     </>
   )

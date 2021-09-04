@@ -1,8 +1,12 @@
 ﻿import React from 'react'
+// import dark from 'styles/themes/dark'
+
+// import Cookies from 'js-cookie'
 
 import * as S from './styles'
 
 const Loading = () => {
+  // const cookieTheme = JSON.parse(Cookies.get('theme') || JSON.stringify(dark))
   return (
     <S.Container>
       <svg
@@ -17,6 +21,11 @@ const Loading = () => {
           <g transform="scale(0.8)">
             <g transform="translate(-50 -50)">
               <polygon fill="#ffffff" points="72.5 50 50 11 27.5 50 50 50">
+                {/* <div />
+              <polygon
+                fill={`${cookieTheme.color.text}`}
+                points="72.5 50 50 11 27.5 50 50 50"
+              > */}
                 <animateTransform
                   attributeName="transform"
                   type="rotate"
@@ -27,6 +36,11 @@ const Loading = () => {
                 ></animateTransform>
               </polygon>
               <polygon fill="#ffffff" points="5 89 50 89 27.5 50">
+                {/* <div />
+              <polygon
+                fill={`${cookieTheme.color.text}`}
+                points="5 89 50 89 27.5 50"
+              > */}
                 <animateTransform
                   attributeName="transform"
                   type="rotate"
@@ -37,6 +51,11 @@ const Loading = () => {
                 ></animateTransform>
               </polygon>
               <polygon fill="#ffffff" points="72.5 50 50 89 95 89">
+                {/* <div />
+              <polygon
+                fill={`${cookieTheme.color.text}`}
+                points="72.5 50 50 89 95 89"
+              > */}
                 <animateTransform
                   attributeName="transform"
                   type="rotate"

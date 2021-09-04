@@ -44,7 +44,7 @@ const Portfolio = () => {
                 <S.DescriptionContainer>
                   Uma página desenvolvida para apresentar como funciona o App
                   Tome Sorte, foi feito o levantamento de quais tipos ações
-                  podem engajar ao cliete.
+                  podem engajar ao cliente.
                 </S.DescriptionContainer>
               </S.InformationContainer>
             </S.CardSites>

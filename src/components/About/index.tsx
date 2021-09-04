@@ -2,7 +2,7 @@
 
 import * as S from './styles'
 
-const fotoImage = '/img/about/foto.png'
+const fotoImage = '/img/about/foto2.png'
 
 const About = () => {
   return (
@@ -16,7 +16,7 @@ const About = () => {
             <S.Description>
               Atualmente tenho 26 anos e sou formado no curso técnico de{' '}
               <strong>Manutenção e Suporte em informática</strong> no IFSP
-              Itapetininga e atualmente cursando{' '}
+              Itapetininga e no momento cursando{' '}
               <strong>Análise e Desenvolvimento de Sistemas</strong> na Fatec
               Itapetininga, comecei na área de Front-End como estágiario e
               atualmente atuo como Front-End Jr.

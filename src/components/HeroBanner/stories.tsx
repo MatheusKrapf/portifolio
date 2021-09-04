@@ -6,4 +6,6 @@ export default {
   component: HeroBanner
 } as Meta
 
-export const Basic: Story = ({ ...args }) => <HeroBanner {...args} />
+export const Basic: Story = ({ ...args }) => (
+  <HeroBanner {...args} toggleTheme={() => console.log('Carregando')} />
+)

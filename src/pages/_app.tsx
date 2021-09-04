@@ -15,12 +15,7 @@ function App({ Component, pageProps }: AppProps) {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
           rel="stylesheet"
         />
-
-        {/* <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap"
-          rel="stylesheet"
-        /> */}
-        <meta name="description" content="a simple boilerplate next js" />
+        <meta name="description" content="Olá, sou Matheus Krapf" />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
