@@ -6,7 +6,7 @@ const Experiences = () => {
   return (
     <S.Container>
       <S.Content>
-        <S.Title>Experiencias</S.Title>
+        <S.Title>Experiências</S.Title>
         <S.ExperiencesContainer>
           <S.ExperienceContentLeft>
             <S.DateExperience>08/2020 - 02/2021</S.DateExperience>

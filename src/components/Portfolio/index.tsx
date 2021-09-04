@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <S.Container>
       <S.Content>
-        <S.Title>Portfolio</S.Title>
+        <S.Title>Portfólio</S.Title>
 
         <S.Description>
           Alguns exemplos de sites em que trabalhei:
@@ -43,8 +43,8 @@ const Portfolio = () => {
                 <S.TitleSite>Tome Sorte</S.TitleSite>
                 <S.DescriptionContainer>
                   Uma página desenvolvida para apresentar como funciona o App
-                  Tome Sorte, foi feito o levantamento de quais tipos ações
-                  podem engajar ao cliente.
+                  Tome Sorte, foi feito um levantamento de quais tipos de ações
+                  podem engajar o cliente.
                 </S.DescriptionContainer>
               </S.InformationContainer>
             </S.CardSites>
@@ -75,8 +75,8 @@ const Portfolio = () => {
               <S.InformationContainer>
                 <S.TitleSite>Rafaela Medeiros</S.TitleSite>
                 <S.DescriptionContainer>
-                  Um portfólio desenvolvido para mostrar os principais projetos
-                  dessa engenheira cheia de criatividade.
+                  Um portfólio desenvolvido para apresentar os melhores projetos
+                  dessa engenheira talentosa.
                 </S.DescriptionContainer>
               </S.InformationContainer>
             </S.CardSites>
