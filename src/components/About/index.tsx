@@ -2,7 +2,7 @@
 
 import * as S from './styles'
 
-const fotoImage = '/img/about/foto2.png'
+const fotoImage = '/img/about/foto.png'
 
 const About = () => {
   return (
