@@ -98,7 +98,7 @@ export const ExperienceContentRight = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 20px;
-  padding-top: 270px;
+  padding-top: 220px;
 
   @media screen and (max-width: 768px) {
     padding-top: 200px;
@@ -145,4 +145,7 @@ export const LineContainer = styled.div`
 export const Line = styled.span`
   border-left: 6px solid #9542f5;
   border-radius: 5px;
+`
+export const ContainetExperience = styled.div`
+  padding-bottom: 100px;
 `
